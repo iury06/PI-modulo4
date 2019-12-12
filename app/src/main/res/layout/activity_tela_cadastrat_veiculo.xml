@@ -35,14 +35,14 @@
         android:layout_height="wrap_content" >
 
         <RadioButton
-            android:id="@+id/radio_altomovel"
+            android:id="@+id/radioAlcol"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Altomovel"
             android:checked="true" />
 
         <RadioButton
-            android:id="@+id/radio_moto"
+            android:id="@+id/radio_Gasolina"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Moto" />

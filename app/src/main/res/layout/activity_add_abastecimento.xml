@@ -84,63 +84,71 @@
         tools:layout_conversion_absoluteWidth="382dp" />
 
     <TextView
+        android:id="@+id/Edit_tipo"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="88dp"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="8dp"
         android:labelFor="@+id/job"
         android:text="Tipo"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-        app:layout_constraintEnd_toStartOf="@+id/radio_moto"
-        app:layout_constraintHorizontal_bias="0.655"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editT_total_pago"
         tools:layout_conversion_absoluteHeight="24dp"
         tools:layout_conversion_absoluteWidth="35dp" />
 
-
-    <RadioButton
-        android:id="@+id/radio_moto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="36dp"
-        android:text="Gasolina"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editT_total_pago"
-        tools:layout_conversion_absoluteHeight="32dp"
-        tools:layout_conversion_absoluteWidth="87dp" />
-
-    <RadioButton
-        android:id="@+id/radio_altomovel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="36dp"
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="314dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        android:checked="false"
-        android:text="Álcool"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.105"
-        app:layout_constraintStart_toEndOf="@+id/radio_moto"
-        app:layout_constraintTop_toBottomOf="@+id/editT_total_pago"
-        tools:layout_conversion_absoluteHeight="32dp"
-        tools:layout_conversion_absoluteWidth="72dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editT_total_pago">
 
+        <RadioButton
+            android:id="@+id/radio_Gasolina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="36dp"
+            android:text="Gasolina"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editT_total_pago"
+            tools:layout_conversion_absoluteHeight="32dp"
+            tools:layout_conversion_absoluteWidth="87dp" />
+
+        <RadioButton
+            android:id="@+id/radioAlcol"
+            android:layout_width="234dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="8dp"
+            android:checked="false"
+            android:text="Álcool"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.105"
+            app:layout_constraintStart_toEndOf="@+id/radio_Gasolina"
+            app:layout_constraintTop_toBottomOf="@+id/editT_total_pago"
+            tools:layout_conversion_absoluteHeight="32dp"
+            tools:layout_conversion_absoluteWidth="72dp" />
+
+    </RadioGroup>
 
     <Button
         android:id="@+id/bnt_salvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
         android:layout_marginEnd="156dp"
         android:text="Savar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.962"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radio_moto"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
         tools:layout_conversion_absoluteHeight="48dp"
         tools:layout_conversion_absoluteWidth="382dp" />
 

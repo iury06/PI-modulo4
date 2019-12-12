@@ -82,6 +82,7 @@ public class TelaCadastrarVeiculo extends AppCompatActivity {
                                                     responseVeiculo.getId()),
                                             Toast.LENGTH_LONG)
                                             .show();
+                                    finish();
                                 } else {
                                     Toast.makeText(TelaCadastrarVeiculo.this,
                                             String.format("Resposta %s", String.valueOf(response.code()))

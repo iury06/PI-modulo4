@@ -49,7 +49,7 @@ public class TelaVeiculo extends AppCompatActivity {
         FloatingActionButton fab = findViewById(R.id.float_bnt);
         fab.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), TelaCadastrarVeiculo.class);
+                Intent intent = new Intent(getApplicationContext(), TelaOpcao.class);
                 startActivity(intent);
 
             }

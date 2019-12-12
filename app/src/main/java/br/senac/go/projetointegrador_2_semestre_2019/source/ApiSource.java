@@ -22,4 +22,8 @@ public interface ApiSource {
 
     @GET("abastecimento")
     Call<List<Abastecimento>> getAbastecimento();
+
+    @POST("abastecimento")
+    Call<Abastecimento> createAbastecimento(@Body Abastecimento abastecimento);
+
 }

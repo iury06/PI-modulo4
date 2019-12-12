@@ -1,6 +1,5 @@
 package br.senac.go.projetointegrador_2_semestre_2019.model;
 
-import java.util.Date;
 import java.util.Objects;
 
 public class Abastecimento {
@@ -11,7 +10,7 @@ public class Abastecimento {
     private String nomePosto;
     private String tipoCombustivel;
     private String placaVeiculo;
-    private Date data;
+    private String data;
 
     @Override
     public String toString() {
@@ -103,11 +102,11 @@ public class Abastecimento {
         this.placaVeiculo = placaVeiculo;
     }
 
-    public Date getData() {
+    public String getData() {
         return data;
     }
 
-    public void setData(Date data) {
+    public void setData(String data) {
         this.data = data;
     }
 }

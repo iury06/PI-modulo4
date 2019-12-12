@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.TelaRelatorio"></activity>
+        <activity android:name=".view.TelaOpcao"></activity>
+        <activity android:name=".view.TelaRelatorio" />
         <activity android:name=".view.TelaAbastecimento" />
         <activity android:name=".view.AddAbastecimento" />
         <activity android:name=".view.TelaVeiculo" />

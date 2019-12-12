@@ -1,5 +1,6 @@
 package br.senac.go.projetointegrador_2_semestre_2019.source;
 
+import br.senac.go.projetointegrador_2_semestre_2019.model.Abastecimento;
 import br.senac.go.projetointegrador_2_semestre_2019.model.Veiculos;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -40,6 +41,10 @@ public class GerenciadorApi {
         veiculosCall.enqueue(callback);
     }
 
+    public  void createAbastecimento(Abastecimento abastecimento, Callback<Abastecimento> callback) {
+        Call<Abastecimento> AbastecimentoCall = service.createAbastecimento(abastecimento);
+        AbastecimentoCall.enqueue(callback);
+    }
    // public void getVeiculo(Veiculos veiculos, Callback<Veiculos> callback) {
      //   Call<Veiculos> veiculosCall = service.createVeiculo(veiculos);
      //   veiculosCall.enqueue(callback);
